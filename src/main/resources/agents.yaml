@@ -1,0 +1,15 @@
+nodes:
+  -
+    hostname: drect-launch-mode-agent-fqdn
+    directLaunchMode:
+      agentName: drect-launch-mode-agent-name
+      secretKey: drect-launch-mode-agent-secret
+      rootUrl: jenkins-controller-root-url
+      workDir: agent-workdir-path
+
+  -
+    hostname: jnlp-file-launch-mode-agent-fqdn
+    jnlpFileLaunchMode:
+      jnlpUrl: jnlp-file-launch-mode-jnlp-file-download-url
+      secret: jnlp-file-launch-mode-agent-secret
+      workDir: agent-workdir-path
